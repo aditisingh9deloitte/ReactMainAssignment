@@ -1,0 +1,37 @@
+{
+    "data" : [{
+        "name" : "Linux 2 image",
+        "desc" : "Linux 2 comes with 5 years of support. It provides Linux Kernel 4.14 tuned for optimal performace",
+        "price" : 243.61,
+        "regions" : ["us-east-1","us-east-2","us-west-1","india-1"],
+        "options" : ["64-bit(x86)", "64-bit(ARM)"]
+    },
+    {
+        "name" : "Ubuntu Server 18.04 LTS",
+        "desc" : "Linux 2 comes with 5 years of support. It provides Linux Kernel 4.14 tuned for optimal performace",
+        "price" : 243.61,
+        "regions" : ["us-east-1","us-east-2","us-west-1","india-1"],
+        "options" : ["64-bit(x86)", "64-bit(ARM)"]
+    },
+    {
+        "name" : "Red Hat Enterprise Linux 8",
+        "desc" : "Linux 2 comes with 5 years of support. It provides Linux Kernel 4.14 tuned for optimal performace",
+        "price" : 300,
+        "regions" : ["us-east-1","us-east-2","us-west-1","india-1"],
+        "options" : ["64-bit(x86)", "64-bit(ARM)"]
+    },
+    {
+        "name" : "Microsoft Windows Server 2019 Base",
+        "desc" : "Linux 2 comes with 5 years of support. It provides Linux Kernel 4.14 tuned for optimal performace",
+        "price" : 338.77,
+        "regions" : ["us-east-1","us-east-2"],
+        "options" : ["64-bit(ARM)"]
+    },
+    {
+        "name" : "SUSE Linux Enterprise Server",
+        "desc" : "Linux 2 comes with 5 years of support. It provides Linux Kernel 4.14 tuned for optimal performace",
+        "price" : 200.22,
+        "regions" : ["us-east-1","us-east-2","us-west-1","india-1"],
+        "options" : ["64-bit(x86)", "64-bit(ARM)"]
+    }]
+}
