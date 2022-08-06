@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,26 +12,54 @@ code {
     monospace;
 }
 
+.tabselected {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.button-tab {
+  padding: 5px;
+  margin-right: 20px;
+  /* margin-right: 20px; */
+}
+
 .platform-card {
-  padding: 35px;
-  padding-left: 40px;
-  margin-left: 30px;
-  width: 72%;
+  padding: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  width: 65%;
+}
+
+.cost-div {
+  box-shadow: 4px 4px 4px 4px rgba(128, 124, 124, 0.2);
+  float: right;
+  margin-right: 10px;
+  margin-top: 45px;
+  width: 380px;
+}
+
+.cost-div h2,h3{
+  padding: 20px;
+}
+
+.region-div {
+  padding-left: 1000px;
+  padding-bottom: 5px;
 }
 
 .platform-card {
   box-shadow: 4px 4px 8px 4px rgba(60, 59, 59, 0.2);
-  padding: 30px;
-  height: 110px;
-  
-  /* background-color: powderblue; */
+  padding: 10px;
+  height: 180px;
 }
 
 .platform-card-left{
+  position: absolute;
   float:left;
 }
 
 .platform-card-right{
+  margin-top: 50px;
   position: relative;
   float:right;
 }

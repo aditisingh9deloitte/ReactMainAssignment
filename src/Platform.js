@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import platformData from './data/platform-data.json';
-import { color } from '@mui/system';
-
 
 const Platform = (() => {
 
@@ -12,14 +10,16 @@ const Platform = (() => {
 
   const handleonclick = (e) => {
     console.log('clicked', e)
-    // radioButton
     setImage(e);
   };
+
+ const handleRadioButton = (e) => {
+  setradioButton(e.target.value);
+ };
 
   return (
     <div className={'platform-main'}>
       { platformData.data.map((elm) => {
-        // const {name, desc, price, region, option} = elm;
         return (<div className='platform-card'>
             <div className='platform-card-left'>
             <h3>{elm.name}</h3>
@@ -34,16 +34,13 @@ const Platform = (() => {
                 name="radio-buttons-group"
               >
                 {elm.options.map((option)=>{
-              return  <label>{option}<Radio name="hi"/></label> 
+              return  <label>{option}<Radio onChange={handleRadioButton} value={option}/></label> 
             })}
             </RadioGroup>
-
-            
-              
               <button type="submit" onClick={(e) => {handleonclick(e)}}>Select</button>
             </div>
         </div>)
-      })};
+      })}
     </div>
   )
 });
