@@ -1,0 +1,23 @@
+{
+  "memory": {
+    "generalPurpose": ["256MB", "512MB", "1GB", "2GB", "4GB"],
+    "storageOptimized": ["16GB", "32GB", "64GB"],
+    "computeOptimzed": ["16GB", "32GB", "64GB"],
+    "networkOptimized": [
+      "256MB",
+      "512MB",
+      "1GB",
+      "2GB",
+      "4GB",
+      "16GB",
+      "32GB",
+      "64GB"
+    ]
+  },
+  "CPUcores": {
+    "generalPurpose": [1, 2, 4],
+    "storageOptimized": [1, 8, 16],
+    "computeOptimzed": [1, 2, 8, 16],
+    "networkOptimized": [1, 2, 4, 8, 16]
+  }
+}
