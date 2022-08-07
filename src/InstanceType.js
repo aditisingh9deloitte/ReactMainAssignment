@@ -21,7 +21,7 @@ const InstanceType = ({ setCpuCores, setMemory }) => {
       <div>
         {Object.keys(instancedata.memory).map((tab) => {
           return (
-            <Button
+            <Button className="button-tab"
               value={tab}
               onClick={() => {
                 handleTabChange(tab);
@@ -33,6 +33,8 @@ const InstanceType = ({ setCpuCores, setMemory }) => {
         })}
       </div>
       <div className="instance-memory-div">
+        <h2>Create Configuration</h2>
+        {/* <h4 className="h4">Memory</h4> */}
         <select onChange={(e) => handleOnSelectMemory(e)}>
           {instancedata.memory[selectedTab].map((element) => {
             return <option value={element}>{element}</option>;
@@ -40,6 +42,7 @@ const InstanceType = ({ setCpuCores, setMemory }) => {
         </select>
       </div>
       <div className="instance-memory-div">
+      {/* <h4 className="h4">CPU Cores</h4> */}
         <select onChange={(e) => handleOnSelectCpu(e)}>
           {instancedata.CPUcores[selectedTab].map((element) => {
             return <option value={element}>{element}</option>;

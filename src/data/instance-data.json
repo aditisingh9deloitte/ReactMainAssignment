@@ -1,9 +1,10 @@
 {
   "memory": {
-    "generalPurpose": ["256MB", "512MB", "1GB", "2GB", "4GB"],
-    "storageOptimized": ["16GB", "32GB", "64GB"],
-    "computeOptimzed": ["16GB", "32GB", "64GB"],
+    "generalPurpose": ["Memory", "256MB", "512MB", "1GB", "2GB", "4GB"],
+    "storageOptimized": ["Memory","16GB", "32GB", "64GB"],
+    "computeOptimzed": ["Memory","16GB", "32GB", "64GB"],
     "networkOptimized": [
+      "Memory",
       "256MB",
       "512MB",
       "1GB",
@@ -15,9 +16,9 @@
     ]
   },
   "CPUcores": {
-    "generalPurpose": [1, 2, 4],
-    "storageOptimized": [1, 8, 16],
-    "computeOptimzed": [1, 2, 8, 16],
-    "networkOptimized": [1, 2, 4, 8, 16]
+    "generalPurpose": ["CPU Cores",1, 2, 4],
+    "storageOptimized": ["CPU Cores",1, 8, 16],
+    "computeOptimzed": ["CPU Cores",1, 2, 8, 16],
+    "networkOptimized": ["CPU Cores",1, 2, 4, 8, 16]
   }
 }

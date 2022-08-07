@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.h4 {
+  float: left;
+}
+
+
 .tabselected {
   margin-left: 20px;
   padding-bottom: 20px;

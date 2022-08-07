@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Cost = ({ image, cpuCores, memory }) => {
   console.log(memory, cpuCores);
@@ -7,12 +7,13 @@ const Cost = ({ image, cpuCores, memory }) => {
       <h2>
         <b>Cost Estimates</b>
       </h2>
-      {image.name} {image.price}
+      {image.name}        {image.price}
       <br />
       {memory}
+      <br/>
       {cpuCores}
       <hr size="2" width="20%" color="grey" />
-      <h3>$0.0/mo</h3>
+      <h3>${image.price}/mo</h3>
     </div>
   );
 };

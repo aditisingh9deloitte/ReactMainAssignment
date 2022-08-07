@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Platform from "./Platform";
 import Regions from "./Regions";
 import Cost from "./Cost";
 import InstanceType from "./InstanceType";
+import Summary from "./Summary";
+import { color } from "@mui/system";
+import { blue } from "@mui/material/colors";
 
 const tab = {
   1: "Choose Image",
@@ -37,6 +40,9 @@ const App = () => {
         );
       case 2:
         return <InstanceType setMemory={setMemory} setCpuCores={setCpuCores} />;
+        
+      case 5:
+        return <Summary memory={memory} cpuCores={cpuCores} image={image} radioButton={radioButton}/>
 
       default:
         return null;
